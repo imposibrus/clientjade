@@ -11,20 +11,20 @@ program
   .usage('<options> <jade files/folder>');
 
 program.on('--help', function() {
-  console.log('  Examples:');  
-  console.log('');  
+  console.log('  Examples:');
+  console.log('');
   console.log('    # compile jade files into js');
   console.log('    $ clientjade test1.jade test2.jade templates/ > jade.js');
-}); 
+});
 
 program.parse(process.argv);
 
 
-if (program.args.length != 0) {
+if (program.args.length !== 0) {
   var opts = {
     files: program.args,
     compress: program.compress
-  }
+  };
   compile(opts, function(err, result) {
     process.stdout.write(result);
   });
