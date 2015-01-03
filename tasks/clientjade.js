@@ -5,7 +5,7 @@ module.exports = function(grunt) {
         done = this.async(),
         ths = this;
 
-    compile({files: ths.data.src, compress: false}, function(err, out) {
+    compile({files: ths.data.src, compress: false, AMD: ths.options().AMD}, function(err, out) {
       grunt.file.write(ths.data.dest, out);
       done();
     });
