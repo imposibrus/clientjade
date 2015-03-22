@@ -6,7 +6,8 @@
   "homepage": "https://github.com/jgallen23/clientjade",
   "author": "Greg Allen <@jgaui> (http://jga.me)",
   "files": [
-    "tasks"
+    "tasks",
+    "lib"
   ],
   "repository": {
     "type": "git",
