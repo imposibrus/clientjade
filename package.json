@@ -27,9 +27,6 @@
     "gulp": "^3.8.11",
     "markx": "*"
   },
-  "bin": {
-    "clientjade": "./bin/clientjade"
-  },
   "keywords": [
     "jade",
     "template",
